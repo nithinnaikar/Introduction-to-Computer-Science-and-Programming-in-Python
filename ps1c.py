@@ -3,6 +3,8 @@
 Created on Wed Dec 22 18:31:26 2021
 
 @author: Nithin
+
+**NOTE: Early version of program. Needs refining.
 """
 
 annual_salary = float(input("Enter your annual salary: "))
