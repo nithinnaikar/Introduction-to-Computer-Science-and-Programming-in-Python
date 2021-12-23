@@ -46,3 +46,4 @@ while abs(current_savings - down_payment) > 100:
 print("Best savings rate:", portion_saved/10000)
 print("Steps in binary search:", steps)
     
+# 3/3 Test Cases Passed
