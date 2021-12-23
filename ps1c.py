@@ -16,6 +16,10 @@ down_payment = portion_down_payment * total_cost
 current_savings = 0
 months = 1
 
+# Initially I thought using the following function would be very computationally expensive as in the worst case, according to binary search's complexity, you have to make a call
+# this function approximately log base 2 (10000) ~ 13 times. But upon further review, the following function doesn't take O(n) time, but rather constant or O(1) time since
+# O(36) = O(1 * 36) where c = 36. Therefore, the following function takes constant time and computes negligible time when n is asymptotically large.
+
 def compute_current_savings(annual_salary, portion_saved):
     current_savings = 0
     for month in range(36):
